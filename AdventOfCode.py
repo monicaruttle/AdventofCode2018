@@ -6,10 +6,7 @@ def day_one_part_one():
 
     total = 0
     for frequency in frequencies:
-            if frequency[0] == '-':
-                total -= int(frequency[1:])
-            else:
-                total += int(frequency[1:])
+            total += int(frequency)
     
     print(total)
 
@@ -25,14 +22,12 @@ def day_one_part_two():
     history.append(total)
     while (True):
         for frequency in frequencies:
-            if frequency[0] == '-':
-                total -= int(frequency[1:])
-            else:
-                total += int(frequency[1:])
+            total += int(frequency)
             
             if total in history:
                 print(total)
                 exit()
 
             history.append(total)
-    
+
+day_one_part_two()    
