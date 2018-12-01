@@ -2,8 +2,6 @@ def day_one_part_one():
     with open('Samples/DayOne.txt') as frequency_file:
         frequencies = frequency_file.readlines()
 
-    frequencies = [frequency.strip() for frequency in frequencies]
-
     total = 0
     for frequency in frequencies:
             total += int(frequency)
@@ -14,8 +12,6 @@ def day_one_part_one():
 def day_one_part_two():
     with open('Samples/DayOne.txt') as frequency_file:
         frequencies = frequency_file.readlines()
-
-    frequencies = [frequency.strip() for frequency in frequencies]
 
     total = 0
     history = []
